@@ -59,8 +59,38 @@ nav li a{
 .btn-primary{
     border-radius: 8px;
     background: #FF900E;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: 0;
     width: 180px;
     height: 64px;
-    color: #FFF;
-    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.banner-img{
+    width: 100%;
+}
+
+/* responsive media query  */
+/* mobile devices  */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+}
+
+/* tablet or medium devices  */
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
 }
