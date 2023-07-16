@@ -6,6 +6,11 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
+.text-grey{
+    color: #727272;
+    font-weight: 400;
+}
+
 /* header style starts here  */
 header{
     background-color: rgba(255, 144, 14, 0.10);
@@ -51,10 +56,6 @@ nav li a{
     font-weight: 700;
     font-size: 4rem;
 }
-.banner-description{
-    color: #727272;
-    font-weight: 400;
-}
 
 .btn-primary{
     border-radius: 8px;
@@ -77,7 +78,7 @@ nav li a{
 /* main section  */
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 
 /* feature section starts here   */
@@ -94,9 +95,7 @@ main{
 }
 
 .feature-title{
-    color: #727272;
-    font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 
 .feature-info{
@@ -117,7 +116,26 @@ main{
     color: #FF900E;
 }
 
+/* architect section starts here  */
+.architect-container{
+    display: flex;
+}
 
+.architect{
+    max-width: 708px;
+}
+
+.architect-info{
+    align-items: center;
+    
+}
+.architect-title{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+/* facts section starts here  */
 
 
 /* responsive media query  */
@@ -133,7 +151,10 @@ main{
         flex-direction: column;
     }
     .feature-img{
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: 1fr;
+    }
+    .architect-container{
+        flex-direction: column;
     }
 }
 
@@ -143,6 +164,12 @@ main{
         padding: 50px;
     }
     nav{
+        flex-direction: column;
+    }
+    .feature-container{
+        flex-direction: column;
+    }
+    .architect-container{
         flex-direction: column;
     }
 }
